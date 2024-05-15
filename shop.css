@@ -1,0 +1,126 @@
+/* Your existing CSS */
+
+body {
+    font-family: "courier-std", monospace; 
+    margin-left: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%; /* Ensure the header spans the entire width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+header h1 {
+    font-family: "lores-21-serif", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    margin-left: 10%;
+    margin-bottom: -10px;
+    color: #ffffff;
+    text-align: left;
+}
+
+h4 {
+font-family:"lores-21-serif", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 0.8em;
+text-align: center;
+}
+
+#shop h2 {
+    font-family: "lores-21-serif", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10%;
+    text-align: left;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 70px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+nav ul li a:hover {
+    color: #ffb5e1;
+}
+
+main {
+    padding: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.item-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item {
+    position: relative; 
+    text-align: center;
+    margin: 20px;
+}
+
+.item img {
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    filter: grayscale(100%);
+}
+
+.item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    transition: opacity 0.3s; 
+    font-size: 0.5em;
+}
+
+.item:hover .item-overlay {
+    opacity: 100; 
+     background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.item-overlay h3,
+.item-overlay p {
+    color: #fff; 
+    margin: 5px 0;
+}
